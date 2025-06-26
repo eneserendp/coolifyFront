@@ -5,7 +5,7 @@ document.getElementById('nameForm').addEventListener('submit', async function(e)
     const resultDiv = document.getElementById('result');
     if (firstName && lastName) {
         try {
-            const response = await fetch('http://localhost:3001/api/users', {
+            const response = await fetch('https://api.eneseren.online/api/users', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
